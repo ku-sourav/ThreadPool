@@ -1,6 +1,6 @@
 # ThreadPool
 ThreadPool implementation in C++. The main purpose of creating this project was to learn threadpool. The code is easy to read and understand.
-If you don't know about threadpool. Read [here]([https://en.wikipedia.org/wiki/Thread_pool](https://en.wikipedia.org/wiki/Thread_pool))
+If you don't know about threadpool. Read [here](https://en.wikipedia.org/wiki/Thread_pool)
 
 ## Compilation
 Tested on Linux Machine. Compile using below command

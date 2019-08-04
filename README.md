@@ -4,7 +4,9 @@ If you don't know about threadpool. Read [here](https://en.wikipedia.org/wiki/Th
 
 ## Compilation
 Tested on Linux Machine. Compile using below command
+```text
 g++ -std=c++11 main.cpp -pthread
+```
 
 ## Usage
 1. Create a threadpool of three threads
@@ -18,7 +20,7 @@ It will create three workers which will execute tasks submitted to the threadpoo
 auto fut1 = pool.enq(add, 100, 200);
 ```
 You have to pass function name, followed by the arguments accepted by the function. No need to worry about the function signature.
-It returns an appropriate future object(future<int> in the above case). You can use `auto` to catch the return future object from the threadpool without worrying about the return type.
+It returns an appropriate future object(`future<int>` in the above case). You can use `auto` to catch the return future object from the threadpool without worrying about the return type.
 To print the result, use `get()` method of future object.
 ```cpp
 std::cout << "foo returned: " << fut1.get() << "\n";
@@ -53,7 +55,7 @@ private:
 	void start();
 	void stop() noexcept;
 
-	std::queue<Task> q;
+    std::queue<Task> q;
     std::vector<std::thread> workers;
     std::mutex mu;
     std::condition_variable cv;

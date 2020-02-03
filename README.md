@@ -65,5 +65,5 @@ private:
 };
 ```
 ## License
-[**THE MIT LICENSE**](LICENSE) Copyright (c) 2019 Kumar Sourav
+[**THE MIT LICENSE**](LICENSE) Copyright (c) 2020 Kumar Sourav
 
